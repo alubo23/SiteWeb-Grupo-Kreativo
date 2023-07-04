@@ -12,13 +12,17 @@ body{
     }
 }
 
+.box-clients {
+    padding: 5rem 0 1rem;
+}
+
 .slider{
     height: 200px;
     margin: auto;
     overflow: hidden;
     position: relative;
     width: auto;
-    padding: 20px 0 20px;
+    padding: 1.5rem 0 0;
 }
 
 .slider .slide-track{
@@ -27,11 +31,11 @@ body{
     width: calc(250px * 14);
 }
 
-.slider .slide{
+/* .slider .slide{
     height: 100px;
     width: 250px;
     
-}
+} */
 
 .slide {
     padding-left: 15px;

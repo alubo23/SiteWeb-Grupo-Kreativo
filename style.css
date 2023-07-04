@@ -73,6 +73,19 @@ header{
     color: var(--color-secundario);
 }
 
+#menu-icon {
+    font-size: 3.6rem;
+    color: var(--color-primario);
+    cursor: pointer;
+    display: none;
+}
+
+
+section {
+    min-height: 100vh;
+    padding: 2rem 9% 2rem;
+}
+
 .home {
     height: 100vh;
     /* background: url('/Banner\ -\ Website\ -\ Dymas\ 1.png') no-repeat; */
@@ -85,6 +98,7 @@ header{
 
 .home-content{
     max-width: 600px;
+    z-index: 99;
 }
 
 .home-content h1 {
@@ -674,7 +688,7 @@ span {
     align-items: center;
     flex-wrap: wrap;
     padding: 1rem 9%;
-    background: var(--color-secundario-dark);
+    background: var(--color-secundario);
 }
 
 .footer-text p {
@@ -702,7 +716,7 @@ span {
     left: 0;
     width: 0;
     height: 100%;
-    background: var(--color-secundario-dark);
+    background: var(--color-secundario);
     z-index: -1;
     transition: .5s;
 }
@@ -778,4 +792,71 @@ span {
         padding: 2rem 4%;
     }
 
+}
+
+@media (max-width: 768px) {
+    .header {
+        background: var(--color-fondo);
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        width: 100%;
+        padding: 1rem 4%;
+        background: var(--color-primario);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        z-index: 1;
+        transition: .25s ease;
+        transition-delay: .25s;
+    }
+    
+    .navbar.active {
+        left: 0;
+        transition-delay: 0s;
+    }
+    
+    .navbar.active .active-nav {
+        left: 0;
+        transition-delay: .25s;
+    }
+
+    .navbar .active-nav {
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: var(--color-fondo);
+        border-top: .1rem solid rgba(0, 0, 0, .1);
+        z-index: -1;
+        transition: .25s ease;
+        transition-delay: 0s;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+        transform: translateX(-20rem);
+        transition: .25s ease;
+        transition-delay: 0s;
+    }
+
+    .navbar.active a {
+        transform: translateX(0);
+        transition-delay: .25s;
+    }
+
+
+    .home-imgHover {
+        pointer-events: none;
+        background: var(--color-fondo);
+        opacity: .6;
+    }
 }
