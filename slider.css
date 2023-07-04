@@ -13,7 +13,7 @@ body{
 }
 
 .box-clients {
-    padding: 5rem 0 1rem;
+    padding: 5rem 0 0;
 }
 
 .slider{
@@ -31,11 +31,12 @@ body{
     width: calc(250px * 14);
 }
 
-/* .slider .slide{
-    height: 100px;
-    width: 250px;
+.slider .slide{
+    padding: 0 30px 0;
+    /* height: 100px;
+    width: 250px; */
     
-} */
+}
 
 .slide {
     padding-left: 15px;
