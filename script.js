@@ -24,7 +24,11 @@ window.onscroll = () => {
                 links.classList.remove('active');
                 document.querySelector('headrer nav a[href*=' + id + ']').classList.add('active');
             });
-
+            
+            sec.classList.add('show-animate');
+        }
+        else {
+            sec.classList.add('show-animate');
         }
     });
 
