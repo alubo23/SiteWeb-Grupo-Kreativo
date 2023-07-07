@@ -33,20 +33,20 @@
 
     <section class="home show-animate" id="home">
         <div class="home-content">
-            <h1>¡Somos Grupo<span>Kreativo!</span></h1>
+            <h1>¡Somos Grupo<span>Kreativo!</span><span class="animate" style="--i:2"></span></h1>
             <!-- <h3>DJ Producer</h3> -->
             <p>Somos una empresa focalizada en el desarrollo competitivo de la Gestión Humana moderna, garantizando la
                 calidad, efectividad, oportunidad, creatividad e innovación en todos nuestros procesos.</p>
             <div class="btn-box">
                 <a href="#">Ver más</a>
-                <a href="#">Contáctame</a>
+                <a href="#contact">Contáctame</a>
             </div>
         </div>
 
         <div class="home-sci">
-            <a href=""><i class='bx bxl-instagram-alt'></i></a>
-            <a href=""><i class='bx bxl-linkedin'></i></a>
-            <a href=""><i class='bx bxl-gmail'></i></a>
+            <a href="https://www.instagram.com/gkgrupokreativo/" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+            <a href="https://www.linkedin.com/company/grupo-kreativo/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://api.whatsapp.com/send?phone=573243401140" target="_blank"><i class='bx bxl-whatsapp'></i></a>
         </div>
 
         <span class="home-imgHover"></span>
@@ -139,67 +139,6 @@
             </div>
     </section>
 
-    <!-- <section class="gallery" id="gallery">
-        <h2 class="heading">Galería</h2>
-
-        <div class="gallery-container">
-            <div class="gallery-box">
-                <img src="img/g1.jpeg" alt="">
-                <div class="gallery-layer">
-                    <h4>Eventos</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, iste!</p>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
-                </div>
-            </div>
-
-            <div class="gallery-box">
-                <img src="img/g2.png" alt="">
-                <div class="gallery-layer">
-                    <h4>Eventos</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, iste!</p>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
-                </div>
-            </div>
-
-            <div class="gallery-box">
-                <img src="img/g3.jpeg" alt="">
-                <div class="gallery-layer">
-                    <h4>Eventos</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, iste!</p>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
-                </div>
-            </div>
-
-            <div class="gallery-box">
-                <img src="img/g4.jpeg" alt="">
-                <div class="gallery-layer">
-                    <h4>Eventos</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, iste!</p>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
-                </div>
-            </div>
-
-            <div class="gallery-box">
-                <img src="img/g5.jpeg" alt="">
-                <div class="gallery-layer">
-                    <h4>Eventos</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, iste!</p>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
-                </div>
-            </div>
-
-            <div class="gallery-box">
-                <img src="img/g6.jpeg" alt="">
-                <div class="gallery-layer">
-                    <h4>Eventos</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, iste!</p>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-
     <!-- <section class="clients"> -->
     <div class="box-clients">
         <h2 class="heading">Clientes</h2>
@@ -244,10 +183,6 @@
                 <div class="slide">
                     <img src="/img/neuroxtimular-logo.png" height="100" width="390" alt="" />
                 </div>
-                <!-- <div class="slide">
-                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250"
-                        alt="" />
-                </div> -->
             </div>
         </div>
     </div>
@@ -258,37 +193,42 @@
     <section class="contact" id="contact">
         <h2 class="heading">Contáctanos</h2>
 
-        <form action="#">
+        <form action="https://formsubmit.co/gh@syprotek.com" method="POST">
             <div class="input-box">
                 <div class="input-field">
-                    <input type="text" placeholder="Nombres" required>
+                    <input name="name" type="text" placeholder="Nombres" required>
                     <span class="focus"></span>
                 </div>
                 <div class="input-field">
-                    <input type="text" placeholder="Email" required>
+                    <input name="email" type="text" placeholder="Email" required>
                     <span class="focus"></span>
                 </div>
             </div>
             <div class="input-box">
                 <div class="input-field">
-                    <input type="number" placeholder="Teléfono" required>
+                    <input name="phone" type="number" placeholder="Teléfono" required>
                     <span class="focus"></span>
                 </div>
                 <div class="input-field">
-                    <input type="text" placeholder="Asunto" required>
+                    <input name="subject" type="text" placeholder="Asunto" required>
                     <span class="focus"></span>
                 </div>
             </div>
 
             <div class="textarea-field">
-                <textarea name="" id="" cols="10" rows="5" placeholder="Mensaje" required></textarea>
+                <textarea name="text" id="" cols="10" rows="5" placeholder="Mensaje" required></textarea>
                 <span class="focus"></span>
             </div>
 
             <div class="btn-box btns">
                 <button type="submit" class="btn">Submit</button>
             </div>
+
+            <!-- Para no redirigir el formulario por la API y quitar el captcha -->
+            <input type="hidden" name="_next" value="http://localhost:5500/">
+            <input type="hidden" name="_captcha" value="false">
         </form>
+
     </section>
 
     <footer class="footer">

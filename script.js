@@ -28,7 +28,7 @@ window.onscroll = () => {
             sec.classList.add('show-animate');
         }
         else {
-            sec.classList.add('show-animate');
+            sec.classList.remove('show-animate');
         }
     });
 

@@ -692,6 +692,7 @@ span {
     width: 100%;
 }
 
+/* Seccion pie de página */
 .footer {
     display: flex;
     justify-content: space-between;
@@ -790,7 +791,8 @@ span {
 
 .logo .animate, 
 .navbar .animate,
-#menu-icon .animate {
+#menu-icon .animate,
+.home.show-animate .animate {
     animation: showRights 1s ease forwards;
     animation-delay: calc(.3s * var(--i)) ;
 }
