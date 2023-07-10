@@ -15,14 +15,14 @@ window.onscroll = () => {
     sections.forEach(sec => {
         let top = window.scrollY;
         let offset = sec.offsetTop - 100;
-        let height = se.offsetHeight;
+        let height = sec.offsetHeight;
         let id = sec.getAttribute('id');
 
         if (top >= offset && top < offset + height) {
             
             navLinks.forEach(links => {
                 links.classList.remove('active');
-                document.querySelector('headrer nav a[href*=' + id + ']').classList.add('active');
+                document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
             });
             
             sec.classList.add('show-animate');
@@ -39,3 +39,18 @@ window.onscroll = () => {
     menuIcon.classList.remove('bx-x');
     navbar.classList.remove('active');
 }
+
+
+const openModal = document.querySelector('.hero__cta');
+const modal = document.querySelector('.modal');
+const closeModal = document.querySelector('.modal__close');
+
+openModal.addEventListener('click', (e)=>{
+    e.preventDefault();
+    modal.classList.add('modal--show');
+});
+
+closeModal.addEventListener('click', (e)=>{
+    e.preventDefault();
+    modal.classList.remove('modal--show');
+});

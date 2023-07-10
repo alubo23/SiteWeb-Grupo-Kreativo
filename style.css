@@ -112,6 +112,7 @@ section {
 
 .home-content h1 {
     position: relative;
+    display: inline-block;
     font-size: 56px;
     font-weight: 700;
     line-height: 1.3;
@@ -121,7 +122,7 @@ section {
     color: var(--color-secundario-dark);
 }
 
-.home-content h1::before {
+/* .home-content h1::before {
     content: '';
     position: absolute;
     top: 0;
@@ -131,7 +132,7 @@ section {
     background: var(--color-terceario);
     animation: showRights 1s ease forwards;
     animation-delay: 1s;
-}
+} */
 
 /* .home-content h3 {
     position: relative;
@@ -158,7 +159,7 @@ section {
     margin: 20px 0 40px;
 }
 
-.home-content p::before {
+/* .home-content p::before {
     content: '';
     position: absolute;
     top: 0;
@@ -168,7 +169,7 @@ section {
     background: var(--color-terceario);
     animation: showRights 1s ease forwards;
     animation-delay: 1.7s;
-}
+} */
 
 .home-content .btn-box {
     position: relative;
@@ -178,7 +179,7 @@ section {
     height: 50px;
 }
 
-.home-content .btn-box::before {
+/* .home-content .btn-box::before {
     content: '';
     position: absolute;
     top: 0;
@@ -189,7 +190,7 @@ section {
     animation: showRights 1s ease forwards;
     animation-delay: 1.9s;
     z-index: 2;
-}
+} */
 
 .btn-box a {
     position: relative;
@@ -347,6 +348,7 @@ section {
 }
 
 .heading {
+    position: relative;
     font-size: 50px;
     margin-bottom: 10px;
     text-align: center;
@@ -412,6 +414,23 @@ span {
     background: var(--color-terceario);
 }
 
+/* Pop up Galería */
+/* Boton Popup */
+.btn-modal {
+    padding: 40px;
+    background-color: #ededed;
+
+}
+
+.btn-modal label{
+    padding: 10px 15px;
+    background-color: var(--color-primario);
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+/* Ventana Popup */
 
 /* Sección de servicios */
 .service {
@@ -781,20 +800,34 @@ span {
 .animate {
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     width: 100%;
     height: 100%;
-    background:#ededed;
+    background: #ededed;
     z-index: 98;
 
+}
+
+.animate.home-img {
+    width: 50%;
 }
 
 .logo .animate, 
 .navbar .animate,
 #menu-icon .animate,
-.home.show-animate .animate {
+.home.show-animate .animate{
     animation: showRights 1s ease forwards;
     animation-delay: calc(.3s * var(--i)) ;
+}
+
+.animate.scroll {
+    transition: 1s ease;
+    transition-delay: calc(.3s / var(--i));
+}
+
+.about.show-animate .animate.scroll {
+    transition-delay: calc(.3s * var(--i));
+    width: 0;
 }
 
 /* Breakpoints */
