@@ -799,13 +799,13 @@ span {
 
 
 /* Breakpoints */
-/* @media (max-width: 1200px) {
+@media (max-width: 1200px) {
     html {
         font-size: 55%;
     }
-} */
+}
 
-/* @media (max-width: 991px) {
+@media (max-width: 991px) {
     .header {
         padding: 2rem 4%;
     }
@@ -822,16 +822,16 @@ span {
         padding: 2rem 4%;
     }
 
-} */
+}
 
-/* 
+
 @media screen and (max-width:800px) {
     .content-modal{
         width: 90%;
     }
-} */
+}
 
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
     .header {
         background: var(--color-fondo);
     }
@@ -900,7 +900,7 @@ span {
     section .about-content {
         padding: 0;
     }
-} */
+}
 
 /* @media (max-width: 520px){
     html {
