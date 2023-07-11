@@ -438,7 +438,7 @@ span {
 }
 
 /* Ventana Popup */
-.btn-modal {
+#btn-modal {
     display: none;
 }
 
@@ -447,7 +447,7 @@ span {
     height: 100vh;
     position: fixed;
     top: 0; left: 0;
-    background-color: rgba(144, 148, 150, 0.8);
+    background-color: rgba(88, 92, 94, 0.8);
     display: none;
     justify-content: center;
     align-items: center;
@@ -459,7 +459,7 @@ span {
 }
 .content-modal{
     width: 100%;
-    max-width: 600px;
+    max-width: 400px;
     padding: 20px;
     background-color: #fff;
     border-radius: 4px;
@@ -930,6 +930,12 @@ span {
         padding: 2rem 4%;
     }
 
+}
+
+@media screen and (max-width:800px) {
+    .content-modal{
+        width: 90%;
+    }
 }
 
 @media (max-width: 768px) {
