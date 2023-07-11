@@ -57,7 +57,7 @@ header{
     text-decoration: none;
 }
 
-.logo::before {
+/* .logo::before {
     content: '';
     position: absolute;
     top: 0;
@@ -67,7 +67,7 @@ header{
     background: var(--color-terceario);
     animation: showRights 1s ease forwards;
     animation-delay: .4s;
-}
+} */
 
 .navbar {
     position: relative;
@@ -799,13 +799,13 @@ span {
 
 
 /* Breakpoints */
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
     html {
         font-size: 55%;
     }
-}
+} */
 
-@media (max-width: 991px) {
+/* @media (max-width: 991px) {
     .header {
         padding: 2rem 4%;
     }
@@ -822,15 +822,16 @@ span {
         padding: 2rem 4%;
     }
 
-}
+} */
 
+/* 
 @media screen and (max-width:800px) {
     .content-modal{
         width: 90%;
     }
-}
+} */
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .header {
         background: var(--color-fondo);
     }
@@ -899,9 +900,9 @@ span {
     section .about-content {
         padding: 0;
     }
-}
+} */
 
-@media (max-width: 520px){
+/* @media (max-width: 520px){
     html {
         font-size: 50%;
     }
@@ -920,9 +921,9 @@ span {
         height: 38px;
     }
 
-}
+} */
 
-@media (max-width: 462px){
+/* @media (max-width: 462px){
     .home-content h1 {
         font-size: 5.2rem;
     }
@@ -942,9 +943,9 @@ span {
     .footer p {
         margin-top: 2rem;
     }
-}
+} */
 
-@media (max-width: 371px){
+/* @media screen and (max-width: 371px){
     .home {
         justify-content: center;
     }
@@ -959,7 +960,7 @@ span {
     .home-content h1 {
         font-size: 5rem;
     }
-}
+} */
 
 @keyframes aboutSpinner {
     100% {
