@@ -52,7 +52,12 @@ header{
     font-weight: 600;
 }
 
-/* .logo::before {
+.logo:hover {
+    color: var(--color-secundario);
+    text-decoration: none;
+}
+
+.logo::before {
     content: '';
     position: absolute;
     top: 0;
@@ -62,7 +67,7 @@ header{
     background: var(--color-terceario);
     animation: showRights 1s ease forwards;
     animation-delay: .4s;
-} */
+}
 
 .navbar {
     position: relative;
@@ -418,7 +423,7 @@ span {
 /* Pop up Galería */
 /* Boton Popup */
 .boton-modal {
-    padding: 20px;
+
     background-color: #ededed;
 }
 
@@ -426,7 +431,6 @@ span {
     padding: 10px 15px;
     background-color: var(--color-primario);
     color: #fff;
-    border: 10px;
     border-radius: 4px;
     cursor: pointer;
     transition: all 300ms ease;
@@ -446,7 +450,8 @@ span {
     width: 100%;
     height: 100vh;
     position: fixed;
-    top: 0; left: 0;
+    top: 0; 
+    left: 0;
     background-color: rgba(88, 92, 94, 0.8);
     display: none;
     justify-content: center;
@@ -458,24 +463,24 @@ span {
     display: flex;
 }
 .content-modal{
-    width: 100%;
-    max-width: 400px;
-    padding: 20px;
+    width: 90%;
+    max-width: 500px;
+    padding: 10px;
     background-color: #fff;
     border-radius: 4px;
-    align-content: center;
+    
 }
 .content-modal h2{
     margin-bottom: 15px;
     text-align: center;
 }
 
-.img-modal {
+/* .img-modal {
     height: 250px;
     width: 334px;
     margin: auto;
     display: flex;
-}
+} */
 
 /* .content-modal p{
     padding: 15px 0px;
@@ -592,86 +597,8 @@ span {
 .service-content .content p {
     font-size: 15px;
     padding-top: .5rem;
+    text-align: justify;
 }
-
-/* Sección de galería */
-.gallery {
-    background: var(--color-terceario);
-}
-
-.gallery h2 {
-    margin-bottom: 4rem;
-}
-
-.gallery-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    gap: 2.5rem;
-    padding: 0 10rem 2rem;
-}
-
-.gallery-container .gallery-box {
-    position: relative;
-    border-radius: 2rem;
-    box-shadow: 0 0 1rem #000;
-    overflow: hidden;
-    display: flex;
-}
-
-.gallery-box  img {
-    width: 100%;
-    transition: .5s ease;
-}
-
-.gallery-box:hover img {
-    transform: scale(1.1);
-}
-
-.gallery-box .gallery-layer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, .1), var(--color-secundario));
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    padding: 0 4rem;
-    transform: translateY(100%);
-    transition: .5s ease;
-}
-
-.gallery-box:hover .gallery-layer {
-    transform: translateY(0);
-}
-
-.gallery-layer h4 {
-    font-size: 1.5rem;
-}
-
-.gallery-layer p {
-    font-size: 15px;
-    margin: .3rem 0 1rem;
-}
-
-.gallery-layer a {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 3rem;
-    height: 3rem;
-    background: var(--color-primario);
-    border-radius: 50%;
-}
-.gallery-layer a i {
-    font-size: 1.5rem;
-    color: var(--color-secundario);
-}
-
 
 /* Sección de contacto */
 .contact {
@@ -841,38 +768,6 @@ span {
     color: var(--color-primario);
 }
 
-@keyframes showRights{
-    100% {
-        width: 0;
-    }
-}
-
-@media (max-width: 768px){
-    .header {
-        background: var(--color-fondo);
-    }
-
-    #menu-icon {
-        display: block;
-    }
-
-    .navbar {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        padding: 1rem 4%;
-        background-color: var(--color-fondo);
-        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
-    }
-
-    .navbar a {
-        display: block;
-        font-size: 1.2rem;
-        margin: 2rem 0;
-    }
-}
-
 .animate {
     position: absolute;
     top: 0;
@@ -901,10 +796,7 @@ span {
     transition-delay: calc(.3s / var(--i));
 }
 
-.about.show-animate .animate.scroll {
-    transition-delay: calc(.3s * var(--i));
-    width: 0;
-}
+
 
 /* Breakpoints */
 @media (max-width: 1200px) {
@@ -1002,6 +894,10 @@ span {
         pointer-events: none;
         background: var(--color-fondo);
         opacity: .6;
+    }
+
+    section .about-content {
+        padding: 0;
     }
 }
 

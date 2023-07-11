@@ -8,11 +8,15 @@
     <title>Grupo Kreativo</title>
 
     <!-- Links -->
+
+    <!-- Boxicons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <!-- Animaciones -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Page JS -->
     <!-- <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script> -->
     
     <!-- Boostrap -->
@@ -34,7 +38,6 @@
             <a href="#home" class="active">Home</a>
             <a href="#about">Sobre Nosotros</a>
             <a href="#service">Servicios</a>
-            <!-- <a href="#galery">Galería</a> -->
             <a href="#contact">Contacto</a>
 
             <span class="active-nav"></span>
@@ -44,16 +47,16 @@
 
     <section class="home show-animate" id="home">
         <div class="home-content">
-            <h1>¡Somos Grupo<span>Kreativo!</span><span class="animate" style="--i:2"></span></h1>
+            <h1>¡Somos Grupo<span>Kreativo!</span><span class="animate" style="--i:3"></span></h1>
 
             <p>Somos una empresa focalizada en el desarrollo competitivo de la Gestión Humana moderna, garantizando la
                 calidad, efectividad, oportunidad, creatividad e innovación en todos nuestros procesos. 
-                <span class="animate" style="--i:3"></span>
+                <span class="animate" style="--i:4"></span>
             </p>
             <div class="btn-box">
                 <a href="#">Ver más</a>
                 <a href="#contact">Contáctame</a>
-                <span class="animate" style="--i:4"></span>
+                <span class="animate" style="--i:5"></span>
             </div>
         </div>
 
@@ -61,11 +64,11 @@
             <a href="https://www.instagram.com/gkgrupokreativo/" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
             <a href="https://www.linkedin.com/company/grupo-kreativo/" target="_blank"><i class='bx bxl-linkedin'></i></a>
             <a href="https://api.whatsapp.com/send?phone=573243401140" target="_blank"><i class='bx bxl-whatsapp'></i></a>
-            <span class="animate" style="--i:5"></span>
+            <span class="animate" style="--i:6"></span>
         </div>
 
         <span class="home-imgHover"></span>
-        <span class="animate home-img" style="--i:6"></span>
+        <span class="animate home-img" style="--i:7"></span>
     </section>
 
     <!-- Sección Sobre Nosotros -->
@@ -85,10 +88,7 @@
                 las necesidades de nuestros clientes, convirtiéndonos así en su aliado estratégico.</p>
         </div>
 
-        <!-- Boton Pop-up
-        <div class="btn-box" data-aos="fade-right">
-            <a href="#" class="btn">Galería</a>
-        </div> -->
+        <!-- Boton Pop-up -->
             <div class="boton-modal" data-aos="fade-right">
                 <label for="btn-modal">
                     Ver Galería
@@ -100,18 +100,22 @@
         <div class="container-modal">
             <div class="content-modal">
                 <h2>Galería</h2>
-                <!-- <img src="./img/g1.jpeg" class="img-modal"> -->
-
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <img class="d-block w-100" src="./img/g1.jpeg" alt="First slide" width="334px" height="250">
+                        <img class="d-block w-100" src="./img/g1.jpeg" alt="First slide">
                       </div>
                       <div class="carousel-item">
-                        <img class="d-block w-100" src="./img/g2.png" alt="Second slide">
+                        <img class="d-block w-100" src="./img/g3.jpeg" alt="Second slide">
                       </div>
                       <div class="carousel-item">
-                        <img class="d-block w-100" src="./img/g3.jpeg" alt="Third slide">
+                        <img class="d-block w-100" src="./img/g4.jpeg" alt="Third slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="./img/g5.jpeg" alt="Third slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="./img/g6.jpeg" alt="Third slide">
                       </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -123,8 +127,6 @@
                       <span class="sr-only">Next</span>
                     </a>
                   </div>
-
-
                 <div class="btn-cerrar">
                     <label for="btn-modal">Cerrar</label>
                 </div>
@@ -322,10 +324,14 @@
         AOS.init();
     </script>
 
+    <!-- Animation -->
+    <script src="./script.js"></script>
+
     <!-- Boostrap -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
