@@ -25,10 +25,13 @@ html{
 body{
     background: var(--color-terceario);
     color: var(--color-primario);
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
 }
 
 header{
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
@@ -95,24 +98,19 @@ header{
 }
 
 
-section {
-    min-height: 100vh;
-    padding: 2rem 9% 2rem;
-}
-
 .home {
-    height: 100vh;
     /* background: url('/Banner\ -\ Website\ -\ Dymas\ 1.png') no-repeat; */
+    margin: 4rem 0;
     background-size: cover;
     background-position: center;
     display: flex;
-    align-items: center;
+    flex-flow: column nowrap;
+    gap: 3rem;
     padding: 0 10%;
 }
 
 .home-content{
     max-width: 600px;
-    z-index: 99;
 }
 
 .home-content h1 {
@@ -252,12 +250,11 @@ section {
 }
 
 .home-sci {
-    position: absolute;
-    bottom: 40px;
-    width: 170px;
     background: transparent;
     display: flex;
-    justify-content: space-between;
+    flex-flow: row nowrap;
+    gap: 1rem;
+    
 }
 
 .home-sci::before {
