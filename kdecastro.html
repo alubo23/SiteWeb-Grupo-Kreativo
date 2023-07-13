@@ -1,11 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Responsive Navbar using HTML, CSS and Javascript</title>
+    <link rel="stylesheet" href="./estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
+
 <body>
-    <h1>karina de Castro</h1>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">Grupo Kreativo</label>
+        <ul>
+          <li><a class="active" href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Feedback</a></li>
+        </ul>
+      </nav>
+      
+
+    <section class="home show-animate" id="home">
+        <div class="home-content">
+            <h1>¡Somos Grupo<span>Kreativo!</span><span class="animate" style="--i:3"></span></h1>
+
+            <p>Somos una empresa focalizada en el desarrollo competitivo de la Gestión Humana moderna, garantizando la
+                calidad, efectividad, oportunidad, creatividad e innovación en todos nuestros procesos.
+                <!-- <span class="animate" style="--i:4"></span> -->
+            </p>
+            <div class="btn-box">
+                <a href="#">Ver más</a>
+                <a href="#contact">Contáctanos</a>
+                <!-- <span class="animate" style="--i:5"></span> -->
+            </div>
+        </div>
+
+        <div class="home-sci">
+            <a href="https://www.instagram.com/gkgrupokreativo/" target="_blank"><i
+                    class='bx bxl-instagram-alt'></i></a>
+            <a href="https://www.linkedin.com/company/grupo-kreativo/" target="_blank"><i
+                    class='bx bxl-linkedin'></i></a>
+            <a href="https://api.whatsapp.com/send?phone=573243401140" target="_blank"><i
+                    class='bx bxl-whatsapp'></i></a>
+            <span class="animate" style="--i:6"></span>
+        </div>
+
+        <span class="home-imgHover"></span>
+        <span class="animate home-img" style="--i:7"></span>
+    </section>
+
+    <!-- Sección Sobre Nosotros -->
+    <section class="about" id="about">
+        <h2 class="heading" data-aos="fade-right">Sobre <span>Nosotros</span></span></h2>
+
+        <div class="about-img" data-aos="fade-right">
+            <img src="./img-gk-2.png" alt="">
+            <span class="circle-spin"></span>
+        </div>
+
+        <div class="about-content" data-aos="fade-right">
+            <h3>Karina De Castro Sequeda</h3>
+            <p>Somos una empresa focalizada en el desarrollo competitivo de la Gestión Humana moderna, garantizando la
+                calidad, efectividad, oportunidad, creatividad e innovación en todos nuestros procesos. Contamos con un
+                equipo de profesionales expertos, con el que acompañamos el cumplimiento de los objetivos propuestos y
+                las necesidades de nuestros clientes, convirtiéndonos así en su aliado estratégico.</p>
+        </div>
+
+        <!-- Boton Pop-up -->
+        <div class="boton-modal" data-aos="fade-right">
+            <label for="btn-modal">
+                Ver Galería
+            </label>
+        </div>
+
+        <!-- Contenido Pop up -->
+        <input type="checkbox" id="btn-modal">
+        <div class="container-modal">
+            <div class="content-modal">
+                <h2>Galería</h2>
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="./img/g1.jpeg" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="./img/g3.jpeg" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="./img/g4.jpeg" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="./img/g5.jpeg" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="./img/g6.jpeg" alt="Third slide">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="btn-cerrar">
+                    <label for="btn-modal">Cerrar</label>
+                </div>
+            </div>
+            <label for="btn-modal" class="cerrar-modal"></label>
+        </div>
+
+    </section>
+
+    <!-- Seccion de Servicios -->
+    <section class="service" id="service">
+
+        <h2 class="heading" data-aos="fade-right">Nuestros <span>Servicios</span></h2>
+
+        <div class="card">
+            <a class="card1" data-aos="fade-right">
+                <p>Consultoría</p>
+                <p class="small">Consultoría, diseño, implementación y ejecución de procesos organizacionales en Gestión
+                    Humana, seguridad social y nómina.</p>
+                <div class="go-corner" href="#">
+                    <div class="go-arrow">
+                        →
+                    </div>
+                </div>
+            </a>
+
+            <a class="card1" data-aos="fade-right">
+                <p>Reclutamiento</p>
+                <p class="small">Procesos de reclutamiento, selección, aplicación de assessment center, poligrafía,
+                    visita
+                    domiciliaria y estudio de seguridad.</p>
+                <div class="go-corner" href="#">
+                    <div class="go-arrow">
+                        →
+                    </div>
+                </div>
+            </a>
+            <a class="card1" data-aos="fade-right">
+                <p>Entrenamiento</p>
+                <p class="small">
+                    Programas para el desarrollo y fortalecimiento de competencias en habilidades blandas, técnicas y
+                    Coaching Game.</p>
+                <div class="go-corner" href="#">
+                    <div class="go-arrow">
+                        →
+
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a class="card1" data-aos="fade-right">
+                <p>Eventos Empresariales</p>
+                <p class="small">
+                    Espacios de entrenamiento para desarrollar y mejorar las habilidades de tu grupo o equipo de
+                    trabajo..</p>
+                <div class="go-corner" href="#">
+                    <div class="go-arrow">
+                        →
+                    </div>
+                </div>
+            </a>
+
+            <a class="card1" data-aos="fade-right">
+                <p>Reclutamiento</p>
+                <p class="small">Sesiones de terapia y psicología para tratamientos y seguimientos de pacientes
+                    especializados.</p>
+                <div class="go-corner" href="#">
+                    <div class="go-arrow">
+                        →
+                    </div>
+                </div>
+            </a>
+
+            <a class="card1" data-aos="fade-right">
+                <p>Entrenamiento</p>
+                <p class="small">Souvernirs motivacionales personalizados para todo tipo de encuentros empresariales.
+                </p>
+                <div class="go-corner" href="#">
+                    <div class="go-arrow">
+                        →
+
+                    </div>
+                </div>
+            </a>
+        </div>
+
+
+    </section>
+
+    <!-- Seccion Clientes Slider -->
+    <div class="box-clients">
+        <h2 class="heading" data-aos="fade-right">Clientes</h2>
+        <div class="slider">
+            <div class="slide-track" data-aos="fade-right">
+                <div class="slide">
+                    <img src="./img/Logo_Exito_colombia.png" height="100" width="120" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="./img/logo-la-sante.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="./img/Logo-automercantil.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="./img/Combarranquilla-logo.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="./img//LOGO UNICOSTA ALPHA_4.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="./img/logo_victor-removebg.png" height="100" width="200" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="./img/toyota-logo.png" height="100" width="120" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="./img/mass-removebg.png" height="100" width="100" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="./img/Liliana-Meza-Logo-Dorado.png" height="100" width="120" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="./img/pnl-removebg.png" height="100" width="100" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="./img/1573946194229-removebg-preview.png" height="100" width="100" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="./img/inf-tri-logo.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="./img/neuroxtimular-logo.png" height="100" width="390" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content" id="contact">
+
+        <h1 class="logo-form" data-aos="zoom-in">Envíanos <span>Tu mensaje</span></h1>
+
+        <div class="contact-wrapper" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="contact-form">
+                <!-- <h3>Contact us</h3> -->
+                <form action="https://formsubmit.co/gh@syprotek.com" method="POSt">
+                    <p>
+                        <label font-weight="400">Nombre</label>
+                        <input type="text" name="fullname">
+                    </p>
+                    <p>
+                        <label>Email</label>
+                        <input type="email" name="email">
+                    </p>
+                    <p>
+                        <label>Teléfono</label>
+                        <input type="tel" name="phone">
+                    </p>
+                    <p>
+                        <label>Asunto</label>
+                        <input type="text" name="affair">
+                    </p>
+                    <p class="block">
+                        <label>Mensaje</label>
+                        <textarea name="message" rows="3"></textarea>
+                    </p>
+                    <p class="block">
+                        <button type="submit">
+                            Enviar
+                        </button>
+                    </p>
+                    <input type="hidden" name="_next" value="http://localhost:5500/">
+                    <input type="hidden" name="_captcha" value="false">
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 By Grupo Kreativo | Todos los derechos reservados.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+
+
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        nav = document.querySelector("nav");
+        hamburger.onclick = function () {
+            nav.classList.toggle("active");
+        }
+    </script>
 </body>
+
 </html>
