@@ -39,3 +39,36 @@ h1, p {
     margin: 0;
 }
 
+.row {
+    display: flex;
+}
+
+.container-header {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 1.5rem 0;
+}
+
+.logo {
+    align-items: center;
+}
+
+.logo img {
+    max-width: 35px;
+}
+
+nav ul {
+    gap: 2rem;
+    align-items: center;
+} 
+
+nav a {
+    font-weight: 500;
+    font-size: 18px;
+}
