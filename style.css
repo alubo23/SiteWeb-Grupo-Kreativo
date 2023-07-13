@@ -167,6 +167,7 @@ section {
     justify-content: space-between;
     width: 345px;
     height: 50px;
+    
 }
 
 .home-content .btn-box::before {
@@ -921,7 +922,6 @@ span {
         font-size: 16px;
     }
 
-
     .service {
         padding: 10rem 4% 5rem;
     }
@@ -936,8 +936,17 @@ span {
         font-size: 55%;
     };
 
+    section {
+        height: auto;
+    }
+
+
+    nav {
+        height: 30px;
+    }
 
     .home {
+        padding-top: 10rem;
         justify-content: center;
     }
 
@@ -949,9 +958,12 @@ span {
     }
 
     .home-content h1 {
+        padding-top: 1rem;
         font-size: 5rem;
     }
 }
+
+
 
 @media (max-width: 952px){
   label.logo{
