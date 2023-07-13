@@ -71,4 +71,5 @@ nav ul {
 nav a {
     font-weight: 500;
     font-size: 18px;
+    transition: .3s ease-in-out;
 }
