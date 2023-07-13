@@ -1,7 +1,4 @@
-body{
-    align-items: center;
-    justify-content: center;
-}
+
 
 @keyframes scroll {
     0%{
@@ -13,7 +10,8 @@ body{
 }
 
 .box-clients {
-    padding: 5rem 0 0;
+    padding: 1rem 0;
+
 }
 
 .slider{
@@ -21,7 +19,7 @@ body{
     margin: auto;
     overflow: hidden;
     position: relative;
-    width: auto;
+    width: 100%;
     padding: 1.5rem 0 0;
 }
 

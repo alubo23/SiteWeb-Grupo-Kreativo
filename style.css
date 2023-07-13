@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&family=Roboto:wght@300;400;500;700;900&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
+:root{
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
@@ -16,18 +14,25 @@
     --color-terceario: #ededed;
     --color-fondo: #ededed;
     --color-fondo2: #ededed;
-}
-
-html{
-    overflow-x: hidden;
+    
 }
 
 body{
     background: var(--color-terceario);
+}
+
+.body{
+    background: var(--color-terceario);
     color: var(--color-primario);
-    max-width: 1400px;
+    max-width: 1640px;
     margin: 0 auto;
-    padding: 0 2rem;
+}
+
+.container{
+    width: 100%;
+}
+section{
+    width: 100%;
 }
 
 header{
@@ -100,13 +105,13 @@ header{
 
 .home {
     /* background: url('/Banner\ -\ Website\ -\ Dymas\ 1.png') no-repeat; */
-    margin: 4rem 0;
     background-size: cover;
     background-position: center;
     display: flex;
     flex-flow: column nowrap;
     gap: 3rem;
-    padding: 0 10%;
+    padding: 3rem 5%;
+
 }
 
 .home-content{
@@ -344,6 +349,7 @@ header{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 4rem 0;
     /* gap: 1rem; */
     background: #ededed;
     /* padding-bottom: 10px; */
@@ -517,7 +523,7 @@ span {
     align-items: center;
     flex-direction: column;
     min-height: auto;
-    padding: 20px;
+    padding: 4rem 4rem;
 }
 
 .service .heading {
@@ -600,7 +606,7 @@ span {
 /* Sección de contacto */
 .contact {
     min-height: auto;
-    padding-bottom: 10px;
+    padding: 4rem 0;
 }
 
 .contact form {
@@ -721,8 +727,22 @@ span {
     background: var(--color-secundario);
 }
 
+.footer-text{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
 .footer-text p {
+    text-align: center;
     font-size: 15px;
+    margin: 0;
+}
+
+.footer-iconTop{
+    flex-grow: 0;
 }
 
 .footer-iconTop a {
@@ -793,171 +813,6 @@ span {
     transition-delay: calc(.3s / var(--i));
 }
 
-
-
-/* Breakpoints */
-@media (max-width: 1200px) {
-    html {
-        font-size: 55%;
-    }
-}
-
-@media (max-width: 991px) {
-    .header {
-        padding: 2rem 4%;
-    }
-
-    section {
-        padding: 10rem 4% 2rem;
-    }
-
-    .home {
-        padding: 0 4%;
-    }
-
-    .footer {
-        padding: 2rem 4%;
-    }
-
-}
-
-
-@media screen and (max-width:800px) {
-    .content-modal{
-        width: 90%;
-    }
-}
-
-@media (max-width: 768px) {
-    .header {
-        background: var(--color-fondo);
-    }
-
-    #menu-icon {
-        display: block;
-    }
-
-    .navbar {
-        position: absolute;
-        top: 100%;
-        left: -100%;
-        width: 100%;
-        padding: 1rem 4%;
-        background: var(--color-primario);
-        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
-        z-index: 1;
-        transition: .25s ease;
-        transition-delay: .25s;
-    }
-    
-    .navbar.active {
-        left: 0;
-        transition-delay: 0s;
-    }
-    
-    .navbar.active .active-nav {
-        left: 0;
-        transition-delay: .25s;
-    }
-
-    .navbar .active-nav {
-        position: absolute;
-        top: 0;
-        left: -100%;
-        width: 100%;
-        height: 100%;
-        background-color: var(--color-fondo);
-        border-top: .1rem solid rgba(0, 0, 0, .1);
-        z-index: -1;
-        transition: .25s ease;
-        transition-delay: 0s;
-    }
-
-    .navbar a {
-        display: block;
-        font-size: 2rem;
-        margin: 3rem 0;
-        transform: translateX(-20rem);
-        transition: .25s ease;
-        transition-delay: 0s;
-    }
-
-    .navbar.active a {
-        transform: translateX(0);
-        transition-delay: .25s;
-    }
-
-
-    .home-imgHover {
-        pointer-events: none;
-        background: var(--color-fondo);
-        opacity: .6;
-    }
-
-    section .about-content {
-        padding: 0;
-    }
-}
-
-/* @media (max-width: 520px){
-    html {
-        font-size: 50%;
-    }
-    
-    .home-content h1 {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .home-sci {
-        width: 160px;
-    }
-
-    .home-sci a {
-        width: 38px;
-        height: 38px;
-    }
-
-} */
-
-/* @media (max-width: 462px){
-    .home-content h1 {
-        font-size: 5.2rem;
-    }
-
-    .service {
-        padding: 10rem 4% 5rem;
-    }
-
-    .contact form .input-box .input-field {
-        width: 100%;
-    }
-
-    .footer {
-        flex-direction: column-reverse;
-    }
-
-    .footer p {
-        margin-top: 2rem;
-    }
-} */
-
-/* @media screen and (max-width: 371px){
-    .home {
-        justify-content: center;
-    }
-
-    .home-content {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .home-content h1 {
-        font-size: 5rem;
-    }
-} */
 
 @keyframes aboutSpinner {
     100% {
