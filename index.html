@@ -9,6 +9,9 @@
 
     <!-- Links -->
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="./hero-js.js"></script>
+
     <!-- Favicon -->
     <link rel="shortcut icon" href="./img/fav/favicon-96x96.png" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -40,7 +43,38 @@
 
 <body>
 
-    <nav>
+    <header class="row container-header">
+        <a href="#" class="logo-a row">
+            <img src="./img/logo_gk_2.png" alt="">
+            <!-- <h1>Grupo Kreativo</h1> -->
+        </a>
+        <div class="toggleMenu" onclick="toggleMenu()"></div>
+        <nav class="navigation row">
+            <ul class="row">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+      
+<!-- Seccion de Hero -->
+      <div class="hero row container-header">
+        <div >
+            <h1>¡Somos</h1>
+            <h1><span>Grupo</span> Kreativo!</h1>
+            <p>Tu mejor aliado en gestión humana.</p>
+            <div>
+                <a href="#contact">Contáctanos</a>
+            </div>
+        </div>
+        <div class="row">
+            <img src="./img/interview.svg" alt="">
+        </div>
+    </div>
+
+    <!-- <nav>
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
           <i class="fas fa-bars"></i>
@@ -51,7 +85,7 @@
           <li><a href="#about">About</a></li>
           <li><a href="#service">Services</a></li>
           <li><a href="#contact">Contact</a></li>
-          <!-- <li><a href="#">Feedback</a></li> -->
+          
         </ul>
       </nav>
 
@@ -61,12 +95,12 @@
 
             <p>Somos una empresa focalizada en el desarrollo competitivo de la Gestión Humana moderna, garantizando la
                 calidad, efectividad, oportunidad, creatividad e innovación en todos nuestros procesos.
-                <!-- <span class="animate" style="--i:4"></span> -->
+                
             </p>
             <div class="btn-box">
                 <a href="#">Ver más</a>
                 <a href="#contact">Contáctanos</a>
-                <!-- <span class="animate" style="--i:5"></span> -->
+                
             </div>
         </div>
 
@@ -77,12 +111,12 @@
                     class='bx bxl-linkedin'></i></a>
             <a href="https://api.whatsapp.com/send?phone=573243401140" target="_blank"><i
                     class='bx bxl-whatsapp'></i></a>
-            <!-- <span class="animate" style="--i:6"></span> -->
+            
         </div>
 
         <span class="home-imgHover"></span>
         <span class="animate home-img" style="--i:7"></span>
-    </section>
+    </section> -->
 
     <!-- Sección Sobre Nosotros -->
     <section class="about" id="about">

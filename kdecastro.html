@@ -6,8 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Navbar using HTML, CSS and Javascript</title>
+
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./sty.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="./hero-js.js"></script>
 </head>
 
 <body>
@@ -16,7 +20,7 @@
     <header class="row container-header">
         <a href="#" class="logo row">
             <img src="./img/logo_gk_2.png" alt="">
-            <h1>Grupo Kreativo</h1>
+            <!-- <h1>Grupo Kreativo</h1> -->
         </a>
         <div class="toggleMenu" onclick="toggleMenu()"></div>
         <nav class="navigation row">
@@ -30,11 +34,14 @@
     </header>
       
 <!-- Seccion de Hero -->
-      <section class="hero">
-        <div>
-            <h1>Somos Grupo Kreativo</h1>
-            <p>Tuy mejor aliado en gestión humana.</p>
-            <a href="#contact">Contáctanos</a>
+      <section class="hero row container-header">
+        <div >
+            <h1>¡Somos</h1>
+            <h1><span>Grupo</span> Kreativo!</h1>
+            <p>Tu mejor aliado en gestión humana.</p>
+            <div>
+                <a href="#contact">Contáctanos</a>
+            </div>
         </div>
         <div class="row">
             <img src="./img/interview.svg" alt="">
@@ -49,6 +56,7 @@
 
         <div class="footer-iconTop">
             <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
+            
         </div>
     </footer>
 </body>
