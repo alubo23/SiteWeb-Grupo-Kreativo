@@ -635,8 +635,8 @@ span {
     justify-content: center;
     align-items: center;
     padding: 5px;
-    background-color: var(--color-primario);
-    border: .2rem solid var(--color-primario);
+    background-color: #b2c200;
+    border: .2rem solid transparent;
     border-radius: 10px;
     z-index: 1;
     overflow: hidden;
@@ -650,7 +650,7 @@ span {
     left: 0;
     width: 0;
     height: 100%;
-    background: var(--color-secundario);
+    background-color: #a5b401;
     z-index: -1;
     transition: .5s;
 }
