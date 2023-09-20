@@ -263,6 +263,53 @@ section {
     padding: 4rem 9% 2rem;
 }
 
+/* Seccion About Us */
+.aboutus {
+    /* padding: 1rem 9% 2rem; */
+    padding: 05rem;
+}
+
+.about-us {
+    gap: 2em;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    min-height: calc(100vh - 93.6px);
+}
+
+.about-us>* {
+    flex: 1 1 25em;
+}
+
+.aboutus img {
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 1) 0px 3px 8px;
+}
+
+.aboutus img:hover {
+    ;
+}
+
+.about-us p {
+    text-align: justify;
+    padding: 0 2rem;
+    font-size: 17px;
+    line-height: 1.6rem;
+}
+
+.aboutus label {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-raiuds: 10px;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+
+
 /* Sección sobre nosotros */
 .about {
     display: flex;
@@ -345,8 +392,10 @@ span {
 /* Pop up Galería */
 /* Boton Popup */
 .boton-modal {
-
+    text-align: center;
+    padding: 1rem 0;
     background-color: #ededed;
+    
 }
 
 .boton-modal label {
@@ -356,6 +405,7 @@ span {
     border-radius: 4px;
     cursor: pointer;
     transition: all 300ms ease;
+    
 }
 
 .boton-modal label:hover {
@@ -452,16 +502,18 @@ span {
 }
 
 .card p {
-    font-size: 25px;
-    font-weight: 500;
-    line-height: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 21px;
     color: var(--color-primario);
     text-align: justify;
+    padding-top: .2rem;
 }
 
 .card p.small {
     font-size: 14px;
     font-weight: 400;
+    padding-top: 15px;
 }
 
 .go-corner {
@@ -489,6 +541,7 @@ span {
     /* display: block; */
     position: relative;
     max-width: 350px;
+    height: 180px;
     background-color: #f2f8f9;
     border-radius: 8px;
     padding: 32px 24px;
