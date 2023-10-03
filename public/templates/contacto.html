@@ -24,41 +24,128 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <!-- Page JS -->
-    <!-- <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script> -->
-
-
     <!-- Boostrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <!-- Estilos y Js -->
+    <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/card_.css">
     <link rel="stylesheet" href="../css/slider.css">
-    <script src="../js/scroll.js"></script>
 </head>
 
 <body>
     <!-- Barra de navegation -->
-    <header class="row container-header">
-        <a href="#" class="logo-a row">
-            <img src="./img/logo_gk_2.png" alt="">
-            <!-- <h1>Grupo Kreativo</h1> -->
-        </a>
-        <div class="toggleMenu" onclick="toggleMenu()"></div>
-        <nav class="navigation row">
-            <ul class="row">
-                <li><a href="/">Inicio</a></li>
-                <li><a href="/servicios">Servicios</a></li>
-                <li><a href="/sobre-nosotros">Sobre Nosotros</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav class="nav-container">
+        <button class="nav-button"></button>
+        <img src="../img/logo_gk_2.png" alt="">
+        <!-- <h1 class="nav-logo">My Website</h1> -->
+        <ul class="menu-container">
+            <li class="menu-item">
+                <a class="menu-link" href="/">Home</a>
+            </li>
+            <li class="menu-item">
+                <a class="menu-link" href="/servicios">Servicios</a>
+            </li>
+            <li class="menu-item">
+                <a class="menu-link" href="/sobre-nosotros">Sobre Nosotros</a>
+            </li>
+            <li class="menu-item">
+                <a class="menu-link" href="/contacto">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <div class="contact">
+
+        <h2>Envíanos Tu Mensaje</h2>
+        <div class="contact-box">
+            <div class="contact-form2">
+                <form action="https://formsubmit.co/gh@syprotek.com" method="POST" id="contact">
+                    <div class="form-elements">
+
+                        <label>Nombres</label>
+                        <div class="input-form">
+                            <input type="text" name="fullname" required>
+                        </div>
+
+                        <label>Email</label>
+                        <div class="input-form">
+                            <input type="email" name="email" required>
+                        </div>
+
+                        <label>Empresa</label>
+                        <div class="input-form">
+                            <input type="text" name="company" required>
+                        </div>
+
+                        <label>Teléfono</label>
+                        <div class="input-form">
+                            <input type="number" name="phone" required>
+                        </div>
+
+
+                        <label>Asunto</label>
+                        <div class="input-form">
+                            <input type="text" name="affair" required>
+                        </div>
+
+
+                        <label>Mensaje</label>
+                        <div class="input-form">
+                            <textarea name="message" rows="3"></textarea>
+                        </div>
+
+                        <div class="btn-form">
+                            <button type="submit">
+                                Enviar
+                            </button>
+                        </div>
+
+                        <input type="hidden" name="_next" value="http://localhost:5500/">
+                        <input type="hidden" name="_captcha" value="false">
+                    </div>
+                </form>
+            </div>
+
+            <div class="form-img">
+                <img src="../img/contacto.jpg" alt="">
+            </div>
+
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 By Grupo Kreativo | Todos los derechos reservados.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#"><img src="../img/punta-de-flecha-hacia-arriba.png"></a>
+        </div>
+    </footer>
+
+    <script src="../js/animations.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Boostrap -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 
 
 
-    
 </body>
 
 </html>

@@ -20,6 +20,10 @@ app.get('/sobre-nosotros', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'templates' ,'sobrenosotros.html'));
 });
 
+app.get('/contacto', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'templates' ,'contacto.html'));
+});
+
 //Rutas a los contactos de los colaboradores
 app.get('/kdecastro', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'templates','kdecastro.html'));
