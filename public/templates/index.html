@@ -10,14 +10,21 @@
     <!-- Links -->
 
     <!-- Hero -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" /> -->
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="./img/fav/favicon-96x96.png" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
-    <!-- Boxicons -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Boxicons - Font -->
+    <!-- <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> -->
+
+    <!-- Font Awesome -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+     -->
+
+    <!-- Social Icons -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 
     <!-- Animaciones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
@@ -90,7 +97,7 @@
                         <label for="btn-modal">
                             Ver Galería
                         </label>
-                        <a href="">Leer más</a>
+                        <!-- <a href="">Leer más</a> -->
                     </div>
                 </div>
 
@@ -268,29 +275,44 @@
 
         <div class="footer-1">
             <div class="col-footer-1">
-                <div class="col-footer-1-img">
+                <!-- <div class="col-footer-1-img">
                     <img src="../img/logo_gk_2.png" alt="">
+                </div> -->
+                <!-- <p>Síguenos en nuestras redes sociales</p> -->
+                <h4>Síguenos</h4>
+                <div class="btn-social-icon">
+                    <a href=""><box-icon name='linkedin' type='logo' color='#ffffff'></box-icon></a>
+                    <a href=""><box-icon name='instagram' type='logo' color='#ffffff'></box-icon></a>
+                    <a href=""><box-icon type='logo' name='facebook' color="#ffffff"></box-icon></a>
                 </div>
-                <p>Síguenos en nuestras redes sociales</p>
-                <div class="social-icons">
-                    <a class="linkedin-icon" href=""></a>
-                    <a class="facebook-icon" href=""></a>
-                    <a class="instagram-icon" href=""></a>
+                <div class="terms">
+                    <a href="">Términos & Condiciones</a>
                 </div>
             </div>
             <div class="col-footer-2">
-                <p>Links</p>
+                <h4>Links</h4>
                 <ol>
-                    <li><a href="">Lorem</a></li>
-                    <li><a href="">Lorem</a></li>
-                    <li><a href="">Lorem</a></li>
+                    <li><a href="">Nuestro Equipo</a></li>
+                    <li><a href="">Nuestro Trabajo</a></li>
+                    <li><a href="">Vacantes</a></li>
                 </ol>
             </div>
             <div class="col-footer-3">
                 <h4>Colombia</h4>
-
-                <p>+57 3222222</p>
-                <p>kdecastro@grupokreativo.com.co</p>
+                <div class="col-footer-3">
+                    <div class="col-footer-3-items-1">
+                        <box-icon name='phone' type='solid' color='#071d49'></box-icon>
+                        <p> (57) 324 3401140</p>
+                    </div>
+                    <div class="col-footer-3-items-2">
+                        <box-icon type='solid' name='envelope' color='#071d49'></box-icon>
+                        <p> kdecastro@grupokreativo.com.co</p>
+                    </div>
+                    <div class="col-footer-3-items-3">
+                        <box-icon type='solid' name='map' color='#071d49'></box-icon>
+                        <p> Barranquilla</p>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="footer-2">
@@ -308,6 +330,10 @@
     <script>
         AOS.init();
     </script>
+
+    <!-- Font Awesome - Web Component -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
 
     <!-- Boostrap -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

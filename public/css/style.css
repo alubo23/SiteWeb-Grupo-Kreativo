@@ -114,15 +114,14 @@ span {
 }
 
 .hero a:hover {
+    color: #C4D600;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     text-decoration: none;
-    transform: translateY(-3px);
+    transform: scale(1.1);
 }
 
 
 /* Breakpoints */
-
-
 @media screen and (max-width:900px) {
 
     .hero {
@@ -142,7 +141,8 @@ section {
     padding: 4rem 9% 2rem;
 }
 
-/* Sección sobre nosotros */
+
+/* Sección sobre nosotros ---------------------------------------------- */
 .aboutus {
     padding: 05rem;
 }
@@ -161,11 +161,6 @@ section {
 .aboutus img {
     border-radius: 20px;
     
-}
-
-.aboutus img:hover {
-    transform: translateY(5px);
-    transition: 0.3s;
 }
 
 .about-us p {
@@ -236,7 +231,7 @@ span {
 
 .boton-modal label:hover {
     transition: .5s;
-    transform: translateY(-3px);
+    transform: scale(1.1);
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -380,12 +375,11 @@ span {
   
   .banner-btn-item {
     font-size: 18px;
+    font-weight: 500;
     padding: calc(0.5em + 0.08vw);
     color: #fff;
     background: transparent;
     text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
     border: 1px solid #fff;
     border-radius: 20px;
     transition: all .7s ease;
@@ -401,14 +395,14 @@ span {
   .banner-btn-item:hover {
     background: linear-gradient(90deg, #04122c 0%, #345aa4 164%);
     color: #C4D600;
-    transform: translateX(5px);
+    transform: scale(1.1);
   }
 
 
 /* Servicios - Consultoría */
 .consultoria {
     background-color: #ededed;
-    padding: 3rem 5rem;
+    padding: 6rem 5rem 9rem;
 }
 
 .consultoria_box {
@@ -427,12 +421,11 @@ span {
     /* box-shadow: rgba(0, 0, 0, 1) 0px 3px 8px; */
 }
 
-.consultoria_box h3 {
-    color: #071D49;
+.consultoria h3 {
     text-align: center;
     font-size: 45px;
-    font-weight: 700;
-    padding-bottom: 10px;
+    font-weight: 600;
+    /* padding-bottom: 10px; */
 }
 
 .consultoria_box p {
@@ -457,19 +450,19 @@ span {
     -o-transition: 0.3s ease-in-out;
 }
 
-@media screen and (max-width:900px) {
+/* @media screen and (max-width:900px) {
     .consultoria {
         flex-direction: column;
         align-items: center;
         text-align: center;
         justify-content: center;
     }
-}
+} */
 
 /* Servicios - Programas de Entrenamiento */
 .entrenamiento {
-    padding: 3rem 5rem;
     background-color: #04122c;
+    padding: 6rem 5rem 9rem;
 }
 
 .entrenamiento_box {
@@ -503,6 +496,11 @@ span {
     font-weight: 300;
     line-height: 1.8rem;
     color: #fff;
+}
+
+.reclutamiento span{
+    color: #04122c;
+    font-weight: 700;
 }
 
 .trainee {
@@ -573,7 +571,7 @@ span {
 /* Servicios - Reclutamiento */
 .reclutamiento {
     background-color: #ededed;
-    padding: 3rem 5rem;
+    padding: 6rem 5rem 9rem;
 }
 
 .reclutamiento_box {
@@ -765,8 +763,8 @@ span {
 }
 
 .text__img__box a:hover {
-    transform: translateY(-3px);
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #00abf0;
+    transform: scale(1.1);
 } 
 
 /* Pestaña de contacto ----------------------------------------------------*/
@@ -873,88 +871,146 @@ span {
     justify-content: space-between;
     flex-direction: column;
     padding: 1rem 9%;
-    background: #fff;
+    background: #ededed;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
     /* background: #04122c;
     color: #fff; */
 }
 
 .footer-1{
-    padding: 2rem 0;
+    padding: 5rem 0 0;
     display: flex;
     justify-content: space-between;
 }
 
 .col-footer-1 {
-    padding: 0 0 1rem;
+    width: 500px;
 }
 
-.col-footer-1 p {
-    font: 20px;
+.col-footer-1 h4 {
+    font-size: 28px;
+    font-weight: 600;
     padding: 1rem 0;
+}
+
+/* .col-footer-1 p {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 1rem 0;
+} */
+
+.terms a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 1rem 0 0;
+    color: #04122c;
+}
+
+.terms a:hover {
+    color: #b2c200;
 }
 
 .col-footer-1-img img{
     width: 80px;
 }
 
-.col-footer-1 a {
-    padding: 0.5rem 1rem;
-    border-radius: 50%;
-}
 
-.social-icons {
-    gap: 2rem;
-}
-
-.linkedin-icon {
-    padding: 0.5rem;
-    background: #0a66c2;
-    width: 50px;
-    height: 50px;
-}
-
-.linkedin-icon img {
-    position: absolute;
-    justify-content: center;
-    align-self: center;
-}
-
-.facebook-icon {
-    background: #0866ff;
-    width: 50px;
-    height: 50px;
-    justify-content: center;
+.btn-social-icon {
+    display: flex;
     align-items: center;
+    justify-content: space-around;
+    padding: 1rem 0;
+}
+
+.btn-social-icon a {
+    text-decoration: none;
+    font-size: 26px;
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
     text-align: center;
-}
+    background: #04122c;
+    color: #f1f1f1;
+    border-radius: 50%;
+    transition: all .3s ease-in-out;
+  }
+  
+.btn-social-icon a:hover {
+    transform: scale(1.1);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+  }
 
-.facebook-icon img {
-    position: absolute;
-    justify-content: center;
-    align-self: center;
-}
-
-.instagram-icon {
+.btn-social-icon a:nth-child(1):hover {
+    background: #0a66c2;
+  }
+.btn-social-icon a:nth-child(2):hover {
     background: rgb(0,40,255);
     background: linear-gradient(212deg, rgba(0,40,255,1) 0%, rgba(231,64,123,1) 39%, rgba(255,131,61,1) 63%, rgba(249,237,65,1) 100%);
-    width: 50px;
-    height: 50px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+}
+.btn-social-icon a:nth-child(3):hover {
+    background: #0866ff;
 }
 
-.instagram-icon img {
-    position: absolute;
-    justify-content: center;
-    align-self: center;
+.col-footer-2 {
+    min-width: 100px;
+}
+
+.col-footer-2 h4 {
+    font-size: 28px;
+    font-weight: 600;
+    padding: 1rem 0;
+}
+
+.col-footer-2 ol {
+    font-size: 18px;
+    padding: 1rem 0;
+    line-height: 2.4;
+}
+
+.col-footer-2 a {
+    color: #071D49;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.col-footer-2 a:hover {
+    color: #C4D600;
+}
+
+.col-footer-3 {
+   
+}
+
+.col-footer-3 h4 {
+    font-size: 28px;
+    font-weight: 600;
+    padding: 1rem 0;
+}
+
+.col-footer-3-items-1{
+    display: flex;
+    padding: 1rem 0;
+}
+.col-footer-3-items-2 {
+    display: flex;
+}
+
+.col-footer-3-items-3 {
+    display: flex;
+    padding: 1rem 0;
+}
+
+.col-footer-3 p {
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 12px;
 }
 
 .footer-2 {
     display: flex;
     justify-content: space-between;
-    padding: 1rem 0;
+    padding: 1rem 0 0;
 }
 
 .footer-text p {
@@ -1035,23 +1091,57 @@ span {
         flex-direction: column;
     }
 
+    .consultoria_box {
+        flex-wrap: wrap-reverse;
+    }
+
     .reclutamiento_box {
         flex-wrap: wrap-reverse;
     }
+
+    .footer-1 {
+        flex-wrap: wrap;
+    }
 }
 
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
 
     section {
         padding: 10rem 4% 2rem;
     }
 
     .home {
-        padding: 0 4%;
+        padding: 3rem 4%;
     }
 
     .footer {
         padding: 2rem 4%;
+    }
+
+    .footer-1 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .col-footer-1 {
+        text-align: center;
+        align-content: center;
+        padding: 3rem 0;
+    }
+
+    .btn-social-icon {
+        display: flex;
+        padding: 0 8rem;
+        justify-content: space-evenly;
+    }
+
+    .col-footer-2 {
+        text-align: center;
+    }
+
+    .col-footer-3 {
+        text-align: center;
     }
 
 }
@@ -1093,10 +1183,14 @@ span {
 
 @media (max-width: 520px) {
     .footer {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
-    .footer p {
+    .footer-2 {
+        flex-direction: column;
+    }
+
+    .footer-2 p {
         margin-top: 2rem;
     }
 
