@@ -10,6 +10,7 @@
     text-decoration: none;
     scroll-behavior: smooth;
     list-style: none;
+    position: relative;
 
     --bluedark: #081b29;
     --blueli9ght: #00abf0;
@@ -19,11 +20,13 @@
     --color-terceario: #ededed;
     --color-fondo: #ededed;
     --color-fondo2: #ededed;
-    --color-prueba: #345aa4
+    --color-prueba: #345aa4;
+    --fondo-blanco: #fff;
 }
 
 html {
     overflow-x: hidden;
+
 }
 
 body {
@@ -131,7 +134,7 @@ span {
     }
 
     .hero img {
-        width: 90vh;
+        /* max-width: 100vh; */
         padding: 0
     };
 }
@@ -160,7 +163,6 @@ section {
 
 .aboutus img {
     border-radius: 20px;
-    
 }
 
 .about-us p {
@@ -188,7 +190,7 @@ section {
 
 .heading {
     position: relative;
-    font-size: 50px;
+    font-size: 70px;
     margin-bottom: 10px;
     text-align: center;
     font-weight: 600;
@@ -233,6 +235,7 @@ span {
     transition: .5s;
     transform: scale(1.1);
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #C4D600;
 }
 
 /* Ventana Pop up */
@@ -423,8 +426,8 @@ span {
 
 .consultoria h3 {
     text-align: center;
-    font-size: 45px;
-    font-weight: 600;
+    font-size: 75px;
+    font-weight: 700;
     /* padding-bottom: 10px; */
 }
 
@@ -485,7 +488,7 @@ span {
 .entrenamiento h3 {
     color: #fff;
     text-align: center;
-    font-size: 45px;
+    font-size: 75px;
     font-weight: 700;
 }
 
@@ -526,7 +529,7 @@ span {
 }
 
 .trainee__answer{
-    padding: 0 30px 0;
+    padding: 0 .8rem 0;
     overflow: hidden;
 }
 
@@ -592,9 +595,8 @@ span {
 
 .reclutamiento h3 {
     text-align: center;
-    font-size: 45px;
-    font-weight: 600;
-    padding-bottom: 1rem;
+    font-size: 75px;
+    font-weight: 700;
 }
 
 .reclutamiento_box h5 {
@@ -690,6 +692,85 @@ span {
     border-left-color: #071D49;             
 }
 
+/* Servicio de Coaching Profesional -----------------------------------------------*/
+.coaching {
+    /* background-color: cornflowerblue; */
+    background-color: #142850;
+    padding: 6rem 5rem 9rem;
+    color: #dae1e7;
+}
+
+.coaching h3 {
+    text-align: center;
+    font-size: 75px;
+    font-weight: 700;
+    padding: 0 0 1rem;
+}
+
+.coach-text {
+    font-size: 24px;
+    text-align: center;
+    color: #345aa4;
+}
+
+.coach-text span {
+    font-style: bold;
+}
+
+.coach-text-2 {
+    font-size: 20px;
+    color: #dae1e7;
+    text-align: center;
+    padding: 0 0 1.5rem;
+}
+
+.coaching h4 {
+    padding: 1rem 0 1rem;
+    font-weight: 700;
+    text-align: center;
+    color: #142850;
+}
+
+.coaching-plans {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.coach-plan-1,
+.coach-plan-2, 
+.coach-plan-3 {
+    width: 350px;
+    padding: 1rem 1.5rem;
+    background: #dae1e7;
+    border: 1px solid #04122c;
+    border-radius: 12px;
+}
+
+/* .coach-plan-3 {
+    background-color: #00909e;
+} */
+
+
+.coaching-plans ol {
+    font-size: 16px;
+    align-content: flex-end;
+}
+
+.coaching-plans li {
+    display: flex;
+    line-height: 1.7;
+    color: #142850;
+}
+
+.coaching-plans span {
+    margin-right: 5px;
+}
+
+
+
+/* Banner Oportunidad de empleo ---------------------------------------*/
 .jobs {
     display: grid;
     grid-template-columns: 1fr;
@@ -719,9 +800,8 @@ span {
 
 .cover__jobs {
     display: grid;
-  max-width: 100%;
-  background: #04122c;
-  opacity: .8;
+    background: #04122c;
+    opacity: .8;
 }
 
 .text__img__box {
@@ -767,6 +847,98 @@ span {
     transform: scale(1.1);
 } 
 
+
+/* Sección de testimonios ---------------------------------------------------------*/
+.review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+.slideshow-container {
+    position: relative;
+    background: #ededed;
+    width: 100vh;
+    border: 3px solid  cornflowerblue;
+    border-radius: 2rem;
+  }
+
+  .review h2 {
+    padding: 0 0 1rem;
+  }
+  
+  .mySlides {
+    display: none;
+    padding: 5rem 5rem 3rem;
+    text-align: center;
+  }
+
+  .mySlides q {
+    font-size: 18px;
+  }
+  
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    font-weight: bold;
+    font-size: 25px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  .next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+ 
+  .dot-container {
+    text-align: center;
+    padding: 20px;
+    background: transparent;
+  }
+  
+
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: cornflowerblue;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #071D49;
+  }
+  
+  .author {
+    font-size: 24px;
+    font-weight: 600;
+    padding: 1rem 0 0;
+    color: cornflowerblue;
+    line-height: 1;
+}
+
+.company {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0;
+}
+
+
 /* Pestaña de contacto ----------------------------------------------------*/
 .contact {
     padding: 2rem 0;
@@ -777,6 +949,14 @@ span {
     font-weight: 700;
     text-align: center;
     color: #071D49;
+    padding-top: 2rem;
+}
+
+.contact p {
+    font-size: 20px;
+    text-align: center;
+    padding: 0;
+    color: rgb(96, 108, 143);
 }
 
 .contact-box {
@@ -786,12 +966,19 @@ span {
 }
 
 .contact-form2 {
-    width: 80vh;
+    /* width: 80vh; */
+    width: 80%;
     max-width: 600px;
     padding: 1rem 2rem;
     border-radius: 1rem;
     
 }
+
+.form-elements {
+    display: flex;
+    flex-direction: column;
+}
+
 .form-elements label {
     font-size: 18px;
     font-weight: 500;
@@ -804,7 +991,7 @@ span {
 
 .form-elements input{
     width: 90%;
-    min-width: 350px;
+    /* min-width: 350px; */
     border: 1px solid gray;
     border-radius: 1rem;
     padding:.5rem .7rem;
@@ -813,15 +1000,15 @@ span {
 
 .form-elements textarea {
     width: 90%;
-    min-width: 350px;
+    /* min-width: 350px; */
     border: 1px solid gray;
     border-radius: 1rem;
     padding:.5rem .7rem;
 }
 
 .btn-form {
-    padding: .5rem 0;
-    text-align: center;
+    padding: .5rem;
+    /* text-align: center; */
     justify-content: center;
 }
 
@@ -842,8 +1029,7 @@ span {
 }
 
 .form-img img {
-    width: 80vh;
-    min-width: 400px;
+    width: 80%;
     max-width: 550px;
     border-radius: 1rem;
 }
@@ -911,17 +1097,21 @@ span {
     color: #b2c200;
 }
 
-.col-footer-1-img img{
+/* .col-footer-1-img img{
     width: 80px;
-}
+} */
 
 
 .btn-social-icon {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    gap: 1rem;
     padding: 1rem 0;
 }
+
+/* box-icon {
+    padding: .5rem;
+} */
 
 .btn-social-icon a {
     text-decoration: none;
@@ -976,10 +1166,6 @@ span {
 
 .col-footer-2 a:hover {
     color: #C4D600;
-}
-
-.col-footer-3 {
-   
 }
 
 .col-footer-3 h4 {
@@ -1067,7 +1253,7 @@ span {
 
 
 
-/* Breakpoints */
+/* Breakpoints -----------------------------------------------------------*/
 @media (max-width: 1150px) {
     .card1,
     .card2,
@@ -1076,6 +1262,16 @@ span {
         flex-direction: column;
     }
 
+    .consultoria {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .consultoria_box {
+        flex-wrap: wrap-reverse;
+    }
     .entrenamiento {
         flex-direction: column;
         align-items: center;
@@ -1091,12 +1287,17 @@ span {
         flex-direction: column;
     }
 
-    .consultoria_box {
-        flex-wrap: wrap-reverse;
+    .reclutamiento {
+        text-align: center;
     }
 
     .reclutamiento_box {
         flex-wrap: wrap-reverse;
+    }
+
+    .coaching-plans {
+        align-items: center;
+        flex-direction: column;
     }
 
     .footer-1 {
@@ -1106,14 +1307,22 @@ span {
 
 @media screen and (max-width: 991px) {
 
-    section {
-        padding: 10rem 4% 2rem;
-    }
 
     .home {
-        padding: 3rem 4%;
+        /* padding: 4%; */
     }
 
+    .form-elements {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-box {
+        align-items: center;
+    }
+
+    
     .footer {
         padding: 2rem 4%;
     }
@@ -1124,15 +1333,23 @@ span {
         align-items: center;
     }
 
+    .col-footer-3 {
+       flex-wrap: wrap;
+    }
+
     .col-footer-1 {
         text-align: center;
-        align-content: center;
+        /* align-content: center; */
         padding: 3rem 0;
     }
 
+    .col-footer-1 {
+        width: 180px;
+        justify-content: center
+    }
+
     .btn-social-icon {
-        display: flex;
-        padding: 0 8rem;
+        padding: 0 .8rem;
         justify-content: space-evenly;
     }
 
@@ -1146,20 +1363,7 @@ span {
 
 }
 
-@media screen and (max-width:800px) {
-    .content-modal {
-        width: 90%;
-    }
 
-
-}
-
-@media (max-width: 768px) {
-
-    section .about-content {
-        padding: 0;
-    }
-}
 
 @media (max-width: 858px) {
     /* a:hover,
@@ -1167,23 +1371,182 @@ span {
         background: none;
         color: var(--color-secundario);
     } */
-
+    
     #check:checked~ul {
         left: 0;
     }
 }
 
-/* LARGE SIZE */
-@media(min-width: 700px) {
-    body {
-        padding: 0 0;
+@media screen and (max-width:800px) {
+    .content-modal {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    section .about-content {
+        padding: 0;
     }
 
+    .slideshow-container {
+        width: 70vh;
+      }
+}
+
+@media(max-width: 700px) {
+
+    .banner-h1-text {
+        font-size: 35px;
+    }
+
+    .consultoria h3,
+    .entrenamiento h3,
+    .reclutamiento h3,
+    .coaching h3{
+        font-size: 35px;
+        padding: 0 0 1rem;
+    }
+
+    .trainee__title {
+        font-size: 16px;
+    }
+
+    .trainee__padding {
+        border: 1.5px solid #b2c200;
+        border-radius: 2.5px;
+    }
+
+    .coaching {
+        padding-left, padding-right: 0;
+    }
+
+    .coach-text {
+        font-size: 18px;
+        padding-bottom: 1rem;
+    }
+
+    .coach-text-2 {
+        font-size: 16px;
+    }
+
+    .contact  {
+        padding: 6rem 0;
+    }   
+
+    .col-footer-1 h4,
+    .col-footer-2 h4,
+    .col-footer-3 h4 {
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+
+    .btn-social-icon {
+        padding: 1rem 0 0;
+    }
+
+    .terms a {
+        padding: 2.5rem 0 0;
+    }
+
+    .footer-2 {
+        padding: 6rem 0 0;
+    }
+
+    .footer-text p {
+        text-align: center;
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 520px) {
+
+    .heading {
+        font-size: 35px;
+        padding: 0 1rem;
+    }
+
+    .entrenamiento h3{
+        font-size: 32px;
+        padding: 0 0 1rem;
+    }
+
+    .consultoria p,
+    .entrenamiento p,
+    .reclutamiento p {
+        font-size: 16px;
+    }
+
+
+    #list-recruit li{
+        font-size: 16px;
+    }
+
+    .text__img__box h3 {
+        font-size: 28px;
+        font-weight: 600;
+    }
+
+    .text__img__box p {
+        font-size: 14px;
+    }
+
+    .mySlides {
+        text-align: justify;
+    }    
+
+    .mySlides q {
+        font-size: 14px;
+    }
+
+    /* .jobs {
+        width: 100%;
+    }
+
+    .jobs img {
+        width: 90vh;
+    }
+
+    .cover__jobs {
+        width: 90vh;
+    } */
+
+    .contact h2 {
+        font-size: 28px;
+    }
+
+    .contact p {
+        font-size: 16px;
+    }
+
+    .container-header {
+        width: 50vh;
+    }
+
+    .contact label {
+        font-size: 16px;
+    }
+
+    .form-elements input,
+    .form-elements textarea {
+        width: 100%;
+    }
+
+    .form-img {
+        padding: 1rem 0;
+    }
+
     .footer {
         flex-direction: column;
+    }
+
+    .col-footer-2 ol {
+        font-size: 16px;
+    }
+
+    .col-footer-3 p {
+        font-size: 16px;
     }
 
     .footer-2 {
@@ -1198,16 +1561,26 @@ span {
 
 @media (max-width: 462px) {
 
+    .heading {
+        font-weight: 700;
+    }
+
     .service {
         padding: 10rem 4% 5rem;
     }
 
     .hero {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     .hero .row {
         align-items: center;
+    }
+
+    .about-us p {
+        padding: 1rem 0;
+        font-size: 16px;
+        line-height: 1.5;
     }
 
     .hero h1 {
@@ -1218,22 +1591,42 @@ span {
         text-align: justify;
     }
 
-    .consultoria_box p {
-        line-height: 2rem;
+    .coaching-plans {
+        gap: 1rem 0;
+    }
+
+    .coach-plan-1,
+    .coach-plan-2,
+    .coach-plan-3 {
+        width: 210px;
+        padding: 1rem .5rem;
+    }
+
+
+    .coaching-plans ol {
+        font-size: 14px;
     }
 }
 
-@media screen and (max-width: 371px) {
-    html {
-        font-size: 55%;
-    }
+    @media (max-width: 371px) {
+        .consultoria_box p {
+            font-size: 16px;
+            line-height: 1.5;
+            padding: 0 0 1rem;
+        }
 
-    ;
+        .entrenamiento_box p {
+            font-size: 16px;
+            line-height: 1.6;
+            padding: 0;
+        }
 
-    section {
-        height: auto;
+        .reclutamiento_box p {
+            font-size: 16px;
+            line-height: 1.6;
+            padding: 0 0 1.5rem;
+        }
     }
-}
 
 @keyframes aboutSpinner {
     100% {

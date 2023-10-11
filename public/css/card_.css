@@ -3,28 +3,28 @@
 
 .serv .heading {
     position: relative;
-    font-size: 50px;
     margin-bottom: 10px;
-    padding-bottom: 25px;
+    padding-bottom: 2rem;
     text-align: center;
-    font-weight: 600;
+
 }
 
 .services {
     padding: 0 64px 64px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 7rem;
+    /* justify-content: center; */
 }
   
   .card1,
   .card2,
   .card3 {
     border-radius: 16px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     width: 330px;
     max-width: 100%;
-    min-height: 00px;
     box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
       0px 5px 8px 0px rgba(0, 0, 0, 0.14),
       0px 1px 14px 0px rgba(0, 0, 0, 0.12);
@@ -134,14 +134,49 @@
 }
   
   
-  * {
+  /* * {
     box-sizing: border-box;
     position: relative;
     transition: all .3s ease
-  }
+  } */
 
   @media screen and (max-width:1160px) {
     .services {
       gap: 2rem;
     }
+  }
+
+  @media screen and (max-width: 520px) {
+    .card1,
+    .card2, 
+    .card3 {
+      width: 250px;
+    }
+
+    .info_ {
+      height: 430px;
+    }
+
+    .title_ {
+      font-size: 20px;
+      padding: 1rem 24px;
+    }
+
+    .description_ {
+      font-size: 12px;
+    }
+
+    .info_ {
+      transform: translateY(100%)
+      translateY(-50px)
+      translateZ(0);
+    }
+
+    .info_:before {
+      transform: translateY(-100%)
+      translateY(50px)
+      translateZ(0);
+    }
+
+
   }

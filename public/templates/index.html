@@ -47,7 +47,6 @@
     <nav class="nav-container">
         <button class="nav-button"></button>
         <img src="../img/logo_gk_2.png" alt="">
-        <!-- <h1 class="nav-logo">My Website</h1> -->
         <ul class="menu-container">
             <li class="menu-item">
                 <a class="menu-link" href="/">Home</a>
@@ -81,7 +80,7 @@
     <!-- --------------------------------------------------------------------------------->
     <!-- Sección Sobre Nosotros -->
     <div class="aboutus" id="about">
-        <h2 class="heading" data-aos="fade-right">Sobre <span>Nosotros</span></span></h2>
+        <h2 class="heading" data-aos="fade-right">Nuestra <span>Identidad</span></span></h2>
         <div class="about-us row">
             <div class="row">
                 <img src="../img/about-us.jpg" data-aos="fade-right">
@@ -118,6 +117,9 @@
     <div class="container-modal">
         <div class="content-modal">
             <h2>Galería</h2>
+            <div class="btn-cerrar">
+                <label for="btn-modal">Cerrar</label>
+            </div>
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -156,7 +158,7 @@
     <!-- Seccion de Servicios -->
     <div class="serv" id="services">
 
-        <h2 class="heading" data-aos="fade-right">Nuestros <span>Servicios</span></h2>
+        <h2 class="heading" data-aos="fade-right">Servicios <span>Esenciales</span></h2>
 
         <div class="services">
             <div class='card1' data-aos="fade-right">
@@ -201,9 +203,28 @@
         </div>
     </div>
 
+    <!-- Banner de Oportunidades de empleo -->
+    <div class="jobs">
+        <div class="img__box">
+            <img src="../img/ofertasempleo.png" alt="">
+        </div>
+
+        <div class="cover__jobs"></div>
+
+        <div class="text__img__box">
+            <h3>Conecta con Oportunidades Laborales</h3>
+            <p>Encuentra tu próximo trabajo con Grupo Kreativo, navega hacia nuestro LinkedIn donde podrás aplicar a una
+                de nuestras vacantes.</p>
+            <div class="btn-jobs">
+                <a href="https://www.linkedin.com/company/grupo-kreativo/jobs/" target="_blank">Vacantes disponibles</a>
+            </div>
+
+        </div>
+    </div>
+
     <!-- Seccion Clientes Slider -->
     <div class="box-clients">
-        <h2 class="heading" data-aos="fade-right">Clientes <span>Satisfechos</span></h2>
+        <h2 class="heading" data-aos="fade-right">Clientes <span>Destacados</span></h2>
         <div class="slider">
             <div class="slide-track" data-aos="fade-right">
                 <div class="slide">
@@ -253,21 +274,42 @@
         </div>
     </div>
 
-    <div class="jobs">
-        <div class="img__box">
-            <img src="../img/ofertasempleo.png" alt="">
-        </div>
+    <!-- Slideshow container -->
+    <div class="review">
 
-        <div class="cover__jobs"></div>
+        <h2 class="heading">Voces <span>Auténticas</span></h2>
 
-        <div class="text__img__box">
-            <h3>Conecta con Oportunidades Laborales</h3>
-            <p>Encuentra tu próximo trabajo con Grupo Kreativo, navega hacia nuestro LinkedIn donde podrás aplicar a una
-                de nuestras vacantes.</p>
-            <div class="btn-jobs">
-                <a href="https://www.linkedin.com/company/grupo-kreativo/jobs/" target="_blank">Vacantes disponibles</a>
+        <div class="slideshow-container">
+            <div class="mySlides">
+                <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit labore provident obcaecati mollitia assumenda corporis maiores tempore saepe impedit eum earum inventore delectus, rem laudantium veritatis voluptas aut, temporibus nobis.
+                Molestiae cum repudiandae obcaecati eveniet. Sit quidem blanditiis, exercitationem cumque eos nam ratione voluptatum nemo! Rem molestias incidunt suscipit ducimus adipisci reiciendis deleniti facilis.</q>
+                <p class="author">Cliente 1</p>
+                <p class="company">Job | Company 1</p>
             </div>
 
+            <div class="mySlides">
+                <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit labore provident obcaecati mollitia assumenda corporis maiores tempore saepe impedit eum earum inventore delectus, rem laudantium veritatis voluptas aut, temporibus nobis.
+                Molestiae cum repudiandae obcaecati eveniet. Sit quidem blanditiis, exercitationem cumque eos nam ratione voluptatum nemo! Rem molestias incidunt suscipit ducimus adipisci reiciendis deleniti facilis.</q>
+                <p class="author">Cliente 2</p>
+                <p class="company">Job | Company 2</p>
+            </div>
+
+            <div class="mySlides">
+                <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit labore provident obcaecati mollitia assumenda corporis maiores tempore saepe impedit eum earum inventore delectus, rem laudantium veritatis voluptas aut, temporibus nobis.
+                Molestiae cum repudiandae obcaecati eveniet. Sit quidem blanditiis, exercitationem cumque eos nam ratione voluptatum nemo! Rem molestias incidunt suscipit ducimus adipisci reiciendis deleniti facilis.</q>
+                <p class="author">Cliente 3</p>
+                <p class="company">Job | Company 3</p>
+            </div>
+
+            <!-- Next/prev buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
         </div>
     </div>
 
@@ -330,6 +372,8 @@
     <script>
         AOS.init();
     </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 
     <!-- Font Awesome - Web Component -->
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
